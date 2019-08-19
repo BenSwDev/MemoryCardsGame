@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/multiplayer_main_layout"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="@drawable/leaderboard_wp"
+        tools:context=".MultiplayerActivity">
+
+        <Button
+            android:id="@+id/multiplayer_exit_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/x_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="closeGame"/>
+
+        <ImageView
+            android:id="@+id/multiplayer_head_iv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/one_vs_one"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!---Player 1-->
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/multiplayer_game_table_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45">
+
+
+            <TextView
+                android:id="@+id/multiplayer_player1_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/user_name"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="119dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintBottom_toTopOf="@+id/points_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.428">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:text="@string/points"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/multiplayer_player1_points"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:layout_weight="30"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/points_layout"
+            android:layout_width="119dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintBottom_toTopOf="@+id/multiplayer_game_table_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.428">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:text="@string/score_multiplayer"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/multiplayer_player1_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:layout_weight="30"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+        <!---Player 1-->
+
+
+        <ImageView
+            android:id="@+id/multiplayer_turn_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/left_iconn"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+
+        <!---Player 2-->
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/multiplayer_game_table_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45">
+
+
+            <TextView
+                android:id="@+id/multiplayer_player2_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/user_name"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player2_points_layout"
+            android:layout_width="119dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintBottom_toTopOf="@+id/multiplayer_game_table_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.428">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:text="@string/score"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/multiplayer_player2_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="119dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintBottom_toTopOf="@+id/player2_points_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.428">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:text="@string/points"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/multiplayer_player2_points"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <!---Player 2-->
+
+        <!--Cards Layout-->
+        <TableLayout
+            android:id="@+id/multiplayer_game_table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:stretchColumns="*"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TableRow
+                android:id="@+id/multiplayer__game_row1"
+                android:layout_width="match_parent"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/multiplayer_card1"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="0" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card2"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="1" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card3"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="2" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card4"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="3" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/multiplayer_game_row2"
+                android:layout_width="match_parent"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/multiplayer_card5"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="4" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card6"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="5" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card7"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="6" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card8"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="7" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/multiplayer__game_row3"
+                android:layout_width="match_parent"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/multiplayer_card9"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="8" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card10"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="9" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card11"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="10" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card12"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="11" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/multiplayer__game_row4"
+                android:layout_width="match_parent"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/multiplayer_card13"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="12" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card14"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="13" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card15"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="14" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card16"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="15" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/multiplayer__game_row5"
+                android:layout_width="match_parent"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/multiplayer_card17"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="16" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card18"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="17" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card19"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="18" />
+
+                <ImageView
+                    android:id="@+id/multiplayer_card20"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/temp_card"
+                    android:tag="19" />
+
+            </TableRow>
+
+        </TableLayout>
+        <!--Cards Layout-->
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</RelativeLayout>

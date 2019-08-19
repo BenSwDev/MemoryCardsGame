@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <integer name="num_of_themes">9</integer>
+
+    <integer name="num_of_cards">20</integer>
+
+    <array name="backgrounds_array">
+
+        <item>@drawable/israel_background</item>
+        <item>@drawable/england_background</item>
+        <item>@drawable/spain_background</item>
+        <item>@drawable/italy_background</item>
+        <item>@drawable/german_background</item>
+        <item>@drawable/france_background</item>
+        <item>@drawable/netherland_background</item>
+        <item>@drawable/greece_background</item>
+        <item>@drawable/belgium_background</item>
+        <item>@drawable/argentina_background</item>
+        <item>@drawable/world_cup_background</item>
+
+    </array>
+
+    <array name="cards_array">
+
+        <item>@drawable/israel_card</item>
+        <item>@drawable/england_card</item>
+        <item>@drawable/spain_card</item>
+        <item>@drawable/italy_card</item>
+        <item>@drawable/german_card</item>
+        <item>@drawable/france_logo</item>
+        <item>@drawable/wc_card5</item>
+        <item>@drawable/gr_card</item>
+        <item>@drawable/belgium_card</item>
+        <item>@drawable/wc_card8</item>
+        <item>@drawable/world_card</item>
+
+    </array>
+
+    <array name="israel_array">
+
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+
+    </array>
+
+    <array name="england_array">
+
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+
+    </array>
+
+    <array name="spain_array">
+
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+
+    </array>
+
+    <array name="italy_array">
+
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+
+    </array>
+
+    <array name="german_array">
+
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+
+    </array>
+
+    <array name="france_array">
+
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+
+    </array>
+
+    <array name="holland_array">
+
+        <item>@drawable/ne_card1</item>
+        <item>@drawable/ne_card2</item>
+        <item>@drawable/ne_card3</item>
+        <item>@drawable/ne_card4</item>
+        <item>@drawable/ne_card5</item>
+        <item>@drawable/ne_card6</item>
+        <item>@drawable/ne_card7</item>
+        <item>@drawable/ne_card8</item>
+        <item>@drawable/ne_card9</item>
+        <item>@drawable/ne_card10</item>
+        <item>@drawable/ne_card1</item>
+        <item>@drawable/ne_card2</item>
+        <item>@drawable/ne_card3</item>
+        <item>@drawable/ne_card4</item>
+        <item>@drawable/ne_card5</item>
+        <item>@drawable/ne_card6</item>
+        <item>@drawable/ne_card7</item>
+        <item>@drawable/ne_card8</item>
+        <item>@drawable/ne_card9</item>
+        <item>@drawable/ne_card10</item>
+
+    </array>
+
+    <array name="greece_array">
+
+        <item>@drawable/gr_card1</item>
+        <item>@drawable/gr_card2</item>
+        <item>@drawable/gr_card3</item>
+        <item>@drawable/gr_card4</item>
+        <item>@drawable/gr_card5</item>
+        <item>@drawable/gr_card6</item>
+        <item>@drawable/gr_card7</item>
+        <item>@drawable/gr_card8</item>
+        <item>@drawable/gr_card9</item>
+        <item>@drawable/gr_card10</item>
+        <item>@drawable/gr_card1</item>
+        <item>@drawable/gr_card2</item>
+        <item>@drawable/gr_card3</item>
+        <item>@drawable/gr_card4</item>
+        <item>@drawable/gr_card5</item>
+        <item>@drawable/gr_card6</item>
+        <item>@drawable/gr_card7</item>
+        <item>@drawable/gr_card8</item>
+        <item>@drawable/gr_card9</item>
+        <item>@drawable/gr_card10</item>
+
+    </array>
+
+    <array name="belgium_array">
+
+        <item>@drawable/be_card1</item>
+        <item>@drawable/be_card2</item>
+        <item>@drawable/be_card3</item>
+        <item>@drawable/be_card4</item>
+        <item>@drawable/be_card5</item>
+        <item>@drawable/be_card6</item>
+        <item>@drawable/be_card7</item>
+        <item>@drawable/be_card8</item>
+        <item>@drawable/be_card9</item>
+        <item>@drawable/be_card10</item>
+        <item>@drawable/be_card1</item>
+        <item>@drawable/be_card2</item>
+        <item>@drawable/be_card3</item>
+        <item>@drawable/be_card4</item>
+        <item>@drawable/be_card5</item>
+        <item>@drawable/be_card6</item>
+        <item>@drawable/be_card7</item>
+        <item>@drawable/be_card8</item>
+        <item>@drawable/be_card9</item>
+        <item>@drawable/be_card10</item>
+
+    </array>
+
+    <array name="argentina_array">
+
+        <item>@drawable/ar_card1</item>
+        <item>@drawable/ar_card2</item>
+        <item>@drawable/ar_card3</item>
+        <item>@drawable/ar_card4</item>
+        <item>@drawable/ar_card5</item>
+        <item>@drawable/ar_card6</item>
+        <item>@drawable/ar_card7</item>
+        <item>@drawable/ar_card8</item>
+        <item>@drawable/ar_card9</item>
+        <item>@drawable/ar_card10</item>
+        <item>@drawable/ar_card1</item>
+        <item>@drawable/ar_card2</item>
+        <item>@drawable/ar_card3</item>
+        <item>@drawable/ar_card4</item>
+        <item>@drawable/ar_card5</item>
+        <item>@drawable/ar_card6</item>
+        <item>@drawable/ar_card7</item>
+        <item>@drawable/ar_card8</item>
+        <item>@drawable/ar_card9</item>
+        <item>@drawable/ar_card10</item>
+
+    </array>
+
+    <array name="world_array">
+
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+        <item>@drawable/en_card1</item>
+        <item>@drawable/en_card2</item>
+        <item>@drawable/en_card3</item>
+        <item>@drawable/en_card4</item>
+        <item>@drawable/en_card5</item>
+        <item>@drawable/en_card6</item>
+        <item>@drawable/en_card7</item>
+        <item>@drawable/en_card8</item>
+        <item>@drawable/en_card9</item>
+        <item>@drawable/en_card10</item>
+
+    </array>
+
+    <array name="main_backgrounds">
+
+        <item>@drawable/main_manu_wp</item>
+        <item>@drawable/main_manu_wp1</item>
+        <item>@drawable/main_manu_wp2</item>
+        <item>@drawable/main_manu_wp3</item>
+        <item>@drawable/main_manu_wp4</item>
+        <item>@drawable/main_manu_wp5</item>
+        <item>@drawable/main_manu_wp6</item>
+        <item>@drawable/main_manu_wp7</item>
+        <item>@drawable/main_manu_wp8</item>
+        <item>@drawable/main_manu_wp9</item>
+        <item>@drawable/main_manu_wp10</item>
+        <item>@drawable/main_manu_wp11</item>
+    </array>
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/main_manu_wp"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/main_manu_wp1"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/main_manu_wp2"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/main_manu_wp3"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/main_manu_wp4"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/main_manu_wp5"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/main_manu_wp6"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/main_manu_wp7"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/main_manu_wp8"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/main_manu_wp9"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/main_manu_wp10"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/main_manu_wp11"
+        android:duration="4000"/>
+
+</animation-list>

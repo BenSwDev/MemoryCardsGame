@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/champions_name_tv"
+        android:layout_width="205dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Name"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/champions_score_tv"
+        android:layout_width="205dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Score"
+        android:textSize="30sp" />
+
+</LinearLayout>

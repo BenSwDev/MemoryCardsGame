@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MemoryCardsGame</string>
+    <string name="congrats_string">ברכות! אתה אלוף אמיתי!</string>
+    <string name="enter_name">הכנס שם</string>
+    <string name="go">התחל</string>
+    <string name="its_a_tie">תיקו</string>
+    <string name="leave_game_dialog_message">האם אתה בטוח שאתה רוצה לסגור את המשחק?</string>
+    <string name="level_10_agrentina">שלב 10 - ארגנטינה</string>
+    <string name="level_11_international">שלב 11 - בינלאומי</string>
+    <string name="level_1_israel">שלב 1 - ישראל</string>
+    <string name="level_2_england">שלב 2 - אנגליה</string>
+    <string name="level_3_spain">שלב 3 -ספרד</string>
+    <string name="level_4_italy">שלב 4 - איטליה</string>
+    <string name="level_5_germany">שלב 5 - גרמניה</string>
+    <string name="level_6_france">שלב 6 - צרפת</string>
+    <string name="level_7_netherlands">שלב 7 - הולנד</string>
+    <string name="level_8_greece">שלב 8 - יוון</string>
+    <string name="level_9_belgium">שלב 9 - בלגיה</string>
+    <string name="negative_dialog_btn">לא</string>
+    <string name="number">00</string>
+    <string name="number_of_lives">מספר טעויות שנותרו</string>
+    <string name="points">ניצחונות</string>
+    <string name="positive_dialog_btn">כן</string>
+    <string name="ready">מוכן</string>
+    <string name="score">ניקוד:</string>
+    <string name="score_multiplayer">ניקוד:</string>
+    <string name="select_level">בחר שלב</string>
+    <string name="set">הכן</string>
+    <string name="tie">תיקו</string>
+    <string name="time_left">מספר ניסיונות:</string>
+    <string name="user_name">שם משתמש</string>
+    <string name="turn_off_hint">כבה/הדלק רמז של 3 שניות</string>
+    <string name="turn_off_music">כבה/הדלק מוזיקת משחק</string>
+    <string name="sounds">צלילים</string>
+    <string name="turn_off_sound">כבה/הדלק צלילים</string>
+    <string name="regular_mode_points">מספר נקודות שנצברו במשחק רגיל:</string>
+    <string name="survival_mode_success">מספר פעמים שניצחת מצב הישרדות:</string>
+    <string name="hint">רמז</string>
+    <string name="מוזיקה">מוזיקה</string>
+    <string name="game_settings">הגדרות משחק</string>
+    <string name="music_and_sounds">מוזיקה וצלילים</string>
+    <string name="statistics">סטטיסטיקות משתמש</string>
+    <string name="your_score_is">התוצאה שלך:</string>
+    <string name="your_score">התוצאה שלך היא:</string>
+    <string name="lose">הפסד</string>
+    <string name="win">ניצחון</string>
+    <string name="please_enter_un">נא הכנס שם משתמש!</string>
+    <string name="please_enter_first_user_name">נא הכנס שם משתמש של השחקן הראשון</string>
+    <string name="please_enter_second_user_name">נא הכנס שם משתמש של השחקן השני</string>
+    <string name="cancel">ביטול</string>
+    <string name="ok">המשך</string>
+
+
+</resources>

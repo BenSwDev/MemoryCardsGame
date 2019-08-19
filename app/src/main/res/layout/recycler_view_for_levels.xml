@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/level_dialog_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/level_relative_layout">
+
+
+    <LinearLayout
+        android:id="@+id/levels_dialog_layour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageButton
+            android:id="@+id/levels_dialog_close_btn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="#00ffffff"
+            android:scaleType="fitXY"
+            android:layout_gravity="end"
+            android:src="@drawable/closee_icon"
+            android:importantForAccessibility="no"/>
+
+        <TextView
+            android:id="@+id/level_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/choose_level"
+            android:textSize="20sp"
+            android:layout_gravity="center" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/levels_list"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/levels_dialog_start"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/levels_dialog_layour"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/start"
+            android:onClick="startFromLevel"
+            android:padding="10dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
